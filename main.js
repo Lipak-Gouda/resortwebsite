@@ -12,18 +12,23 @@ function menu_Close(){
     menu_list.remove("a");
 }
 
- //  Responsive Menu 
-let Header =  document.getElementById("bag-icon").addEventListener("click", open_cart);
-let cart = document.getElementById('cart-open');
-let cartClose = document.getElementById('cart-close').addEventListener("click", close_cart) 
+
+const Open = document.getElementById('open');
+const Close = document.getElementById('close');
+const PopupContainer = document.getElementById('ppp')
+
+ Open.addEventListener('click', () =>{
+    PopupContainer.classList.add('active');
+ })
+
+Close.addEventListener('click', () => {
+    PopupContainer.classList.remove('active');
+})
+  
 
 
-function   open_cart(){
-    document.getElementById('cart-open').classList.add("active");
-     
-} 
-function close_cart(){
-      
-    document.getElementById('cart-open').classList.remove("active")
-} 
+
+
+
+
  

@@ -18,7 +18,7 @@
  .s-two .slider-container .slider1 {
      width: 100%;
      height: 720px;
-     background-image: url(Images/Sliderimage1.jpg);
+     background-image: url(Images/unpl-room2.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -40,7 +40,7 @@
  .s-two .slider-container .slider2 {
      width: 100%;
      height: 720px;
-     background: url(Images/Sliderimage2.jpg);
+     background: url(Images/unpla-room4.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -49,7 +49,7 @@
  .s-two .slider-container .slider3 {
      width: 100%;
      height: 720px;
-     background-image: url(Images/Sliderimage3.jpg);
+     background-image: url(Images/unpla-room3.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -58,7 +58,7 @@
  .s-two .slider-container .slider4 {
      width: 100%;
      height: 720px;
-     background-image: url(Images/Sliderimage4.jpg);
+     background-image: url(Images/unpla-room4.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -70,7 +70,12 @@
  }
 
  .s-three .review-slider-container {
-     padding: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1300px;
  }
 
  .s-three .review-slider-container .s-three-heading-tag {
@@ -83,12 +88,14 @@
  }
 
  .s-three .review-slider-container .review-slider-content {
-     display: flex;
-     gap: 29px;
+    display: flex;
+    gap: 29px;
+    align-items: center;
+    justify-content: center;
  }
 
  .review-slider-content .review-slider1 {
-     max-width: 565px;
+      width: 50%;
      height: 184px;
      border: 1px solid white;
      /* align-items: center; */
@@ -135,7 +142,8 @@
  }
 
  .s-four .s-four-content .heading {
-     text-align: center;
+    text-align: center;
+    margin: 27px 0px;
  }
 
  .s-four-content .product {
@@ -151,27 +159,30 @@
  }
 
  .s-four .s-four-content .heading p {
-     font-family: 'Roboto', sans-serif;
-     font-size: 32px;
-     font-weight: 500;
-     margin: 20px 0;
-     letter-spacing: 1.5px;
-     color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 20px 0;
+   
+    color: black;
  }
 
  .s-four .s-four-content .product-container {
-     max-width: 392px;
-     max-height: 508px;
-     border: 1px solid #b6aeaee0;
-     box-shadow: 0px 0px 2px 0px #5e5050e6;
+    max-width: 436px;
+    border: 1px solid #b6aeaee0;
+    box-shadow: 0px 0px 2px 0px #5e5050e6;
+    height: 501px
  }
 
- .s-four .s-four-content .product-container .product-content {}
+ .s-four .s-four-content .product-container .product-content {
+    width: 100%;
+    height: 421px;
+ }
 
  .s-four .s-four-content .product-container .product-content img {
-     width: 100%;
-     height: auto;
-     object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
  }
 
  .s-four .s-four-content .product-container .product-content .text-price {
@@ -272,11 +283,13 @@
  /* ============== S-six Styling =================== */
 
  .s-six {
-     width: 100%;
- }
+    width: 100%;
+    margin: 64px 0px;
+}
+ 
 
  .s-six-container {
-     background-image: url(Images/HoneyAllDay-Newsletter-Banner-Banner.jpg);
+     background-image: url(Images/sajanhouseBanner.jpg);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -366,7 +379,14 @@
      font-size: 31px;
      font-weight: 600;
  }
-
+ .s-seven-content .fun-decs{
+    text-align: center;
+    margin: 25px 0px;
+    font-size: 17px;
+    font-weight: 500;
+    opacity: .5;
+    line-height: 1.6rem;
+}
  .s-seven-content .s-seven-product {
      display: flex;
      gap: 21px;
@@ -454,75 +474,23 @@
      font-weight: 300;
  }
 
- /* Footer Styling Start hear */
- footer {
-     width: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: #242424;
-     height: 259px;
+  #call-icon img{
+    position: fixed;
+    right: 10%;
+    bottom: 18px;
+    z-index: 1000;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 65px
  }
 
- .footer-content {
-     max-width: 1353px;
-     /* background: white; */
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap:  90px;
-     padding: 0 22px;
- }
-
- .footer-content ul {
-     list-style: none;
-     color: #9e9e9e;
-     font-size: 14px;
-     font-weight: 400;
- }
-
- .footer-content li {
-     margin-top: 10px;
- }
-
- .footer-content p {
-     font-weight: 700;
-     color: white;
-     font-size: 19px;
- }
-
- .footer-left-side-content {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 46px;
- }
-
- .footer-left-side-content .get-in-touch {}
-
- .footer-left-side-content .get-in-touch p {}
-
- .footer-left-side-content .get-in-touch ul {}
-
- .footer-left-side-content .get-in-touch ul li {}
-
- .footer-left-side-content .get-in-touch ul li i {}
-
- .footer-left-side-content .get-in-touch li span {}
-
- .footer-left-side-content .product {}
-
-
- .footer-right-side-content {
-     display: flex;
-     gap: 83px;
- }
-
-
-
+ 
  /* Responsive Design Start Here */
 
  @media(max-width:1000px){
+    .upper-nav{
+        display: none;
+    }
     footer{
         height: 500px;
     }
@@ -530,20 +498,27 @@
         flex-direction: column;
     }
  }
- @media(max-width:900px) {
+ @media(max-width:955px) {
+    header .upper-nav{
+        display: none;
+    }
      .s-two .slider-container .slider1 {
+        width: 100%;
          height: 400px;
      }
 
      .s-two .slider-container .slider2 {
+        width: 100%;
          height: 400px;
      }
 
      .s-two .slider-container .slider3 {
+        width: 100%;
          height: 400px;
      }
 
      .s-two .slider-container .slider4 {
+        width: 100%;
          height: 400px;
      }
 
@@ -563,14 +538,21 @@
      .s-six-content form {
          align-items: center;
      }
-      
-
+     /********************  section seven ********************/
+     .s-seven-content .fun-decs{
+        font-size: 15px;
+        line-height: 1.2rem;
+        padding: 0 14px;
+     }
  }
 
+ 
 
  @media(max-width:600px) {
+     
      .s-three .review-slider-container .review-slider-content {
          flex-direction: column;
+          
      }
 
      .s-four-content .product,
@@ -587,19 +569,13 @@
      .s-seven-content .s-seven-label .s-seven-label-content{
         height: 272px;
      }
-     footer{
-        height: 600px;
+     .review-slider-content .review-slider1{
+        width: 95%;
      }
-     .footer-content{
-        flex-direction: column;
-        gap: 0px;
-     }
-     .footer-left-side-content,.footer-right-side-content{
-        gap: 0px;
-     }
+      
  }
  @media(max-width:  460px){
     .s-six-content form input{
-        width: 329px;
+        width: 299px;
     }
  }

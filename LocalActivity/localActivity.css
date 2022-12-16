@@ -1,0 +1,46 @@
+.activity-sec-one{
+     margin-top: 173px; 
+    max-width: 1596px;
+}
+.activity-container{}
+.act-text{}
+.head-text p{
+    text-align: center;
+    font-size: 55px;
+    /* margin-top: 45px; */
+    font-weight: 500;
+    color: orange;
+}
+.text{
+    text-align: center;
+}
+.bold-para{
+    font-weight: 700;
+    font-size: 19px;
+}
+.normal-para{
+    max-width: 1363px;
+    /* margin-bottom: 28px */
+}
+.img-section{}
+.img-content{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.img1{
+    max-width: 449px;
+}
+.img1 img{
+    width: 100%;
+     
+}
+.img1 p{
+    align-items: center;
+    font-size: 29px;
+    font-weight: 400;
+    margin-top: 17px
+}

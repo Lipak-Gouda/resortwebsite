@@ -1,0 +1,157 @@
+
+.popup-form{
+    background: linear-gradient(to right, rgb(0 0 0 / 78%), rgb(0 0 0 / 48%));
+    width: 98%;
+    height: 414px;
+    border-radius: 15px;
+    display: flex;
+
+    
+}
+
+.main-form-input {
+    width: 100%;
+    height: 100%;
+    padding: 34px;
+    display: flex;
+    
+    gap: 41px;
+}
+
+  label {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 97%;
+    height: 29px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    margin-bottom: 9px;
+    outline: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.leftside {
+    width: 50%;
+}
+
+#property {
+    width: 100%;
+    height: p;
+    position: relative;
+    top: 5px;
+    height: 29px;
+    outline: none;
+    border-radius: 1px;
+}
+
+ 
+.mini-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.rightside {
+    width: 50%;
+}
+
+.m-b {
+    margin-bottom: 12px;
+}
+
+.mini-input-content {
+    width: 100%;
+}
+
+.property-num-of-people {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+  textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}
+
+    .pop-logo{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    line-height: 0px;
+}    
+
+ .pop-logo p {
+    color: white;
+    font-size: 13px;
+
+}
+
+.pop-logo img {
+    width: 236px;
+    margin-top: 2px;
+}  
+
+ 
+ 
+#results {
+    color: #33ff00;
+    font-size: 13px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.note-mobile {
+    display: none;
+}
+
+@media(max-width:773px) {
+    .section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    
+    }
+    .main {
+        width: 100%;
+        height: 834px;
+    }
+
+    .popup-form{
+        height: 661px;
+    }
+
+    .main-form-input {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 800px;
+        display: block;
+    }
+
+    .leftside,
+    .rightside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rightside {
+        position: relative;
+        top: -12px;
+    }
+}    

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoneyDayAll</title>
+    <title>SajanHouse</title>
 
     <!--======== Font Awsome CDN Links ==============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -23,6 +23,8 @@
     <!-- ====================== Css link ============== -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
+    <!-- <link rel="stylesheet" href="popup.css"> -->
+    <link rel="stylesheet" href="footer.css">
 
 
 </head>
@@ -31,59 +33,151 @@
     <div class="main">
         <div class="header">
             <header>
+                <div class="upper-nav">
+
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <a href="tel:7506 904 899">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>7506 904 899</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>enquire@sajanhouse.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span> Sajan House</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
                 <nav id="nav" class="navbar">
                     <div class="logo">
                         <i id="mobile-menu" class=" fa-solid fa-bars"></i>
-                        <img src="Images/headerLogo.png" alt="headerlogo">
+                        <img src="Images/sajanLogo.png" alt="headerlogo">
                     </div>
                     <ul id="ul-list" class="main-list">
                         <i id="mobile-close" class="fa-solid fa-xmark main-list-remove"></i>
-                        <li>HOME</li>
-                        <li>PRODUCTS</li>
-                        <li>WHITE ACACIA</li>
-                        <li>COOK BOOK</li>
-                        <li>WHAT'S BUZZING</li>
-                        <li>CONTACT US</li>
-
+                        <li> <a href="index.html"> HOME</a></li>
+                        <li> <a href="Room/room.html"> ROOMS</a></li>
+                        <li> <a href="LocalActivity/localActivity.html"> LOCAL ACTIVITIES</a></li>
+                        <li> <a href="/gallery/gallery.html"> GALLEERY</a></li>
+                        <li> <a href="/contact us/contact.html"> CONTACT US</a></li>
 
                     </ul>
-                    <div class="user-save-cart-logo">
-                        <ul>
-                            <li> <i class="fa-regular fa-user"></i></li>
-                            <li><i class="fa-regular fa-heart"></i> <span></span></li>
-                            <li><i id="bag-icon" class="fa-solid fa-bag-shopping bag-icon"></i> <span></span></li>
-                        </ul>
-                    </div>
-                    <div id="cart-open" class="cart">
-                        <h2 class="cart-heading">YOUR CART</h2>
-                        <i id="cart-close" class="fa-regular fa-xmark cart-close"></i>
-                        <div class="cart-details">
-                            <img src="Images/Productimage1.jpg" alt="">
-                            <div class="price-details">
-                                <div class="product-name">
-                                    <p>Honey Straws – Bengal Multif</p>
-                                    <i class="fa-solid fa-xmark cart-remove"></i>
+                    <div class="header-button">
+                        <button  id="open">Book Now</button>
+                        <div id="ppp" class="popup-container">
+                            <div class="pupup">
+                                <button id="close">X</button>
+                                <form class="popup-form" onsubmit="return processInputs()" action="https://sheetdb.io/api/v1/2alj0d36oe8w5 " id="sheetdb-form"
+                                method="post">
+                                <div class="main-form-input">
+                                    <div class="leftside">
+                
+                
+                
+                                        <input type="hidden" id="localtime" name="data[Submit time]">
+                
+                
+                                        <div class=" m-b name">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="data[Name]" placeholder="Name" required>
+                                        </div>
+                
+                                        <div class=" m-b  mini-input check-in-out-date">
+                
+                                            <div class="mini-input-content property">
+                                                <label for="check-in">Check In</label>
+                                                <input type="date" id="check-in" name="data[Check in Date]" placeholder="Check In Date*"
+                                                    required>
+                                            </div>
+                
+                                            <div class="mini-input-content num-of-people">
+                                                <label for="check-out">Check Out </label>
+                                                <input type="date" id="check-out" name="data[Check Out Date]" placeholder="Check out">
+                                            </div>
+                
+                                        </div>
+                                        <div class=" m-b mini-input property-num-of-people">
+                
+                                            <div class="mini-input-content property">
+                                                <label for="property">Property Name*</label>
+                                                <select name="data[Property Name]" class="input" id="property">
+                                                    <option value="Shrushti Farm">Shrushti Farm</option>
+                                                    <option value="Kamal Resort">Kamal Resort</option>
+                                                    <option value="Shavas Resort">Shvas Resort</option>
+                                                    <option value="Palms Rsorts">Palms Resort</option>
+                                                </select>
+                                            </div>
+                
+                                            <div class="mini-input-content num-of-people">
+                                                <label for="number-of-people">Number of People</label>
+                                                <input type="text" id="number-of-people" name="data[Number of People]"
+                                                    placeholder="Number of people">
+                                            </div>
+                
+                                        </div>
+                
+                                        <div class="m-b note-desk">
+                
+                                            <label for="note">Remarks*</label>
+                                            <textarea name="data[Remarks]" id="note" cols="30" rows="10" placeholder="">
+                
+                                         </textarea>
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="rightside">
+                                        <div class="m-b Event Inquiry">
+                                            <label for="event">Event Inquiry*</label>
+                                            <input type="text" id="name" name="data[Event Inquiry]" placeholder="Event Inquiry">
+                                        </div>
+                                        <div class="m-b phone">
+                                            <label for="phone">Phone Number*</label>
+                                            <input type="number" id="phone" name="data[Phone Number]" placeholder="Phone number"
+                                                required>
+                                        </div>
+                                        <div class="m-b email">
+                                            <label for="email">Email*</label>
+                                            <input type="email" id="email" name="data[Email]" placeholder="Email">
+                
+                                            <div class="m-b note-mobile">
+                                                <label for="note">Remarks*</label>
+                                                <textarea name="data[Remarks]" id="note" cols="30" rows="10" placeholder="">
+                                         </textarea>
+                
+                                            </div>
+                                            
+                                            <div class="text">
+                                                <p id="results"> </p>
+                                            </div>
+                                        </div>
+                
+                                        <div class="pop-logo">
+                
+                                            <p>Designed By</p>
+                                            <img src="images/netspinne.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="quantity">
-                                    <span class="no">1</span>
-                                    <span> <i class="fa-solid fa-xmark"></i></i></span>
-                                    <span class="price">255.0</span>
-                                </div>
-
-
+                            </form>
                             </div>
-                        </div>
-                        <div class="total">
-                            <p class="text">Subtotal:</p>
-                            <p class="total-price">$255.00</p>
-                        </div>
-                        <div class="cart-btn">
-                            <a href="view-cart">VIEW CART</a>
-                            <a href="check-our">CHECKOUT</a>
-
-                        </div>
-
+                         </div>
                     </div>
+
                 </nav>
 
             </header>
@@ -123,7 +217,7 @@
             <div class="review-slider-container">
                 <div class="s-three-heading-tag">
                     WHAT PEOPLE HAVE TO SAY ABOUT <br>
-                    HONEY ALL DAY TRULY RAW HONEY
+                    SAJAN HOUSE
                 </div>
                 <div class=" review-slider-content ">
                     <div class="review-slider1">
@@ -133,10 +227,13 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>This is my second order Delivery on time. The package is good. Customer interaction is best.
-                            The quality of honey is really good So thick flow and crystal golden color Taste is best.
+                        <p>
+
+                            Nature Friendly, fully cover with greenery , perfect place for family get together, Private
+                            place. Mr.sachin (villa staff) very supportive .
                         </p>
-                        <span>Shahrukh Shaikh</span>
+                        <span> Harshada Shelar </span>
+
                     </div>
                     <div class="review-slider1">
                         <div class="rating">
@@ -145,10 +242,13 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>This is my second order Delivery on time. The package is good. Customer interaction is best.
-                            The quality of honey is really good So thick flow and crystal golden color Taste is best.
+                        <p>
+                            We had such an awesome stay at the Sajan House! The staff cooked us delicious food and
+                            helped make sure we are always comfortable. The pool was such a great place to relax when we
+                            returned from activities. I wish we could have stayed longer!
                         </p>
-                        <span>Shahrukh Shaikh</span>
+                        <span>Jayesh Parihar </span>
+
                     </div>
                 </div>
             </div>
@@ -159,16 +259,16 @@
         <section class="s-four">
             <div class="s-four-content">
                 <div class="heading">
-                    <p>OUR PRODUCTS</p>
+                    <p>ROOMS</p>
 
                 </div>
                 <div class="product">
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage1.jpg" alt="">
+                            <img src="Images/ROOM1.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
                                 <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
@@ -177,25 +277,25 @@
                     </div>
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage2.jpg" alt="">
+                            <img src="Images/room2.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
-                                <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
+                                <a href="#"><i class="fa-solid fa-check"></i> BOOK NOW</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage3.jpg" alt="">
+                            <img src="Images/ROOM3.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
-                                <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
+                                <a href="#"><i class="fa-solid fa-check"></i> BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -203,39 +303,41 @@
 
                 <br>
                 <div class="product lower-product">
+
+
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage4.jpg" alt="">
+                            <img src="Images/camp2.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
-                                <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
+                                <a href="#"><i class="fa-solid fa-check"></i> BOOK NOW</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage5.jpg" alt="">
+                            <img src="Images/camp4.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
-                                <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
+                                <a href="#"><i class="fa-solid fa-check"></i> BOOK NOW</a>
                             </div>
                         </div>
                     </div>
                     <div class="product-container">
                         <div class="product-content">
-                            <img src="Images/Productimage6.jpg" alt="">
+                            <img src="Images/camp4.jpg" alt="">
                             <div class="text-price">
-                                <p>Honey Jar-White Acacia</p>
-                                <p>$624.00-$1,773.00</p>
+                                <p></p>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i> <span>2,500 - 3,500</span></p>
                             </div>
                             <div class="product-btn">
-                                <a href="#"><i class="fa-solid fa-check"></i>SELECT OPTIONS</a>
+                                <a href="#"><i class="fa-solid fa-check"></i> BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -244,7 +346,7 @@
 
         </section>
 
-        <section class="s-five">
+        <!-- <section class="s-five">
             <div class="s-five-container">
                 <div class="s-five-content">
                     <div class="faq-head">
@@ -301,17 +403,18 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <section class="s-six">
             <div class="s-six-container">
                 <div class="s-six-content">
-                    <p class="big-text">Join Our Hive</p>
-                    <p class="small-text">and get 15% off on your next purchase</p>
+                    <p class="big-text">Join Us</p>
+                    <p class="small-text">and get 10% off on your next visits</p>
                     <form action="#">
                         <input placeholder="Email" type="email">
                         <button type="submit">Submit</button>
                     </form>
+
                 </div>
             </div>
 
@@ -320,25 +423,28 @@
         <section class="s-seven">
             <div class="s-seven-container">
                 <div class="s-seven-content">
-                    <div class="head-text">READ OUR BLOG</div>
+                    <div class="head-text">FUN ACTIVITIES</div>
+                    <P class="fun-decs">At Sajan House, we put every effort into creating <br> a warm and welcoming environment with all the
+                        amenities you need.<br> We crafted a fun-packed  variety of activities to ensure that your stay is
+                        both relaxing and fun.</P>
                     <div class="s-seven-product">
                         <div class="product1">
-                            <img src="Images/ReadBlogImg1.jpg" alt="">
-                            <p>The Health Benefits of Truly Raw Honey</p>
+                            <img src="Images/barbacue.jpg" alt="">
+                            <p>Barbecue Dinner</p>
                             <a href="">Read More <span><i class="fa-solid fa-angles-right"></i></span></a>
                         </div>
                         <div class="product1">
-                            <img src="Images/ReadBlogImg2.jpg" alt="">
-                            <p>The Health Benefits of Truly Raw Honey</p>
+                            <img src="Images/Badmiton.jpg" alt="">
+                            <p>Badminton</p>
                             <a href="">Read More <span><i class="fa-solid fa-angles-right"></i></span></a>
                         </div>
                         <div class="product1">
-                            <img src="Images/ReadBlogImg3.jpg" alt="">
-                            <p>The Health Benefits of Truly Raw Honey</p>
+                            <img src="Images/Worli Wall.jpg" alt="">
+                            <p>Worli wall paintings</p>
                             <a href="">Read More <span><i class="fa-solid fa-angles-right"></i></span></a>
                         </div>
                     </div>
-                    <div class="s-seven-label">
+                    <!-- <div class="s-seven-label">
                         <div class="s-seven-label-container">
                             <div class="s-seven-label-content">
                                 <div class="fee-shipping">
@@ -367,43 +473,43 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+                     <a id="call-icon" href="tel: 7506 904 899"><img src="Images/call-icon.png" alt=""></a>
+
                 </div>
         </section>
 
 
+        
         <footer>
             <div class="footer-content">
                 <div class="footer-left-side">
                     <div class="footer-left-side-content">
                         <div class="get-in-touch">
-                            <p>GET IN TOUCH</p>
+                             <img src="Images/sajanLogo.png" alt="">
                             <ul>
                                 <li><i></i>
-                                    <span>GTC Industries <br>
-                                        Mittal Industrial Estate, <br>
-                                        Marol, kurla w, Mumbai-400059, <br>
-                                        Maharashtra, India.</span>
+                                    <span>This is an amazing place for <br>  familiesand  youngsters. This is a 4bhk<br> villa with lawn located at  a distance of 100 KM from<br> Mumbai at Sajan village,  Vikramgad. Located <br> between green nature,leading  to a pleasant vacation.</span>
                                 </li>
                                 <li>
                                     <i></i>
                                     <span>
-                                        +91 6371809061</span>
+                                        +91  7506 904 899</span>
                                 </li>
                                 <li>
                                     <i></i>
-                                    <span>lipakgouda@gmail.com</span>
+                                    <span>enquire@sajanhouse.com</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="product">
-                            <p>PRODUCTS</p>
+                            <p>QUICK LINKS</p>
                             <ul>
-                                <li>Honey All Day Gift Combo Pack</li>
-                                <li>Honey Pouch – Bengal Multiflora</li>
-                                <li>Honey Jar – Bengal Multiflora</li>
-                                <li>Honey Jar – Kashmir Multiflora</li>
-                                <li>Honey Jar – Forest Gold Raw Honey</li>
+                                <li>ABOUT US</li>
+                                <li>ROOMS</li>
+                                <li>GALLERY</li>
+                                <li>CONTACT</li>
+                                <li>LOCAL ACTIVITY</li>
                             </ul>
                         </div>
                     </div>
@@ -412,24 +518,19 @@
                 <div class="footer-right-side">
                     <div class="footer-right-side-content">
                         <div class="usefull-link">
-                            <p>USEFUL LINKS</p>
+                            <p>CONTACT US</p>
                             <ul>
-                                <li>Wishlist</li>
-                                <li>Refund Policy</li>
-                                <li>Privacy Policy</li>
-                                <li>Terms & Condition</li>
-                                
+                                <li> Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor, sit amet  <br>Lorem, ipsum dolor.</li>
+                                <li>+91 0000 00000</li>
+                                <li>lipakgouda@gmail.com</li>
+                                 
                             </ul>
                         </div>
                         <div class="latest-post">
-                            <p>LATEST POSTS</p>
-                            <ul>
-                                <li>The Health Benefits of Truly Raw Honey</li>
-                                <li>Truly Raw Honey French Toast</li>
-                                <li>Truly Raw Honey Cornbread</li>
-                                <li>Truly Raw Honey Chocolate Chip Banana Bread </li>
-                                <li>Truly Raw Honey Mustard Glazed Carrots </li>
-                            </ul>
+                            <p>LOCATE US</p>
+                        
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d961341.8695432628!2d73.088134!3d19.744884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a6478301566291!2sSajan%20House!5e0!3m2!1sen!2sus!4v1667488604151!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                             
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,18 @@
+.gallery-section{
+    max-width: 2000px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 188px;
+    margin-bottom: 56px;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+img{
+    max-width: 594px;
+}
